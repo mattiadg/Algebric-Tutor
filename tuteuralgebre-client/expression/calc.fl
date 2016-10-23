@@ -1,0 +1,52 @@
+%{
+	#include <string.h>
+	#include "headerexp.h"
+	#include "calc.tab.h"
+%}
+
+%option noyywrap
+%option yylineno
+
+delim		[ \t]
+spazi		{delim}+
+num			0|[1-9][0-9]*
+var			[a-z]+
+reale		{num}|{num}*\.{num}+
+
+%%
+
+
+"+"			return('+');
+"-"			return('-');
+"*"			return('*');
+"/"			return('/');
+"="			return('=');
+"("			return('(');
+")"			return(')');
+"{"			return('{');
+"}"			return('}');
+";"			return(';');
+","			return(',');
+"<="        return(LEQ);
+">="        return(GEQ);
+
+"sin"		return(SIN);
+"cos" 		return(COS);
+"exp"		return(EXP);
+"?"         return('?');
+":"         return(':');
+"if"        return(IF);
+"else"      return(ELSE);
+"for"		return(FOR);
+{spazi}		;
+
+{reale}		{yylval.double_t=atof(yytext); return(NUM_REAL);}
+{var}		{yylval.char_t=strdup(yytext); return(VAR);}
+\n			;
+%%
+
+
+void yyerror (char const *s)
+{
+	fprintf(stderr, "line %d: %s\n", yylineno, s);
+}

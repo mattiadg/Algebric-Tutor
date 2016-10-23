@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>Tuteur Algebre - client:  Fichier source de client.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Tuteur Algebre - client
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.8 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Recherche');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Page&#160;principale</span></a></li>
+      <li><a href="annotated.html"><span>Classes</span></a></li>
+      <li class="current"><a href="files.html"><span>Fichiers</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Recherche" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Liste&#160;des&#160;fichiers</span></a></li>
+      <li><a href="globals.html"><span>Membres&#160;de&#160;fichier</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Tout</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Fichiers</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Fonctions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Définitions de type</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Énumérations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valeurs énumérées</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Amis</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">client.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="client_8cpp.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;tcpconnector.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="menu__option_8h.html">menu_option.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="send__program_8h.html">send_program.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="client__menu_8h.html">client_menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="retrieve__corrected_8h.html">retrieve_corrected.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="evaluate__program_8h.html">expression/evaluate_program.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="client_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">   13</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="client_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]){</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">if</span> (argc != 3) {</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        cout &lt;&lt; <span class="stringliteral">&quot;usage: &quot;</span> &lt;&lt; argv[0] &lt;&lt; <span class="stringliteral">&quot; &lt;port&gt; &lt;ip&gt;\n&quot;</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        exit(1);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    }</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classClientMenu.html">ClientMenu</a> menu;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    shared_ptr&lt;MenuOption&gt; sp1(<span class="keyword">new</span> <a class="code" href="classSendProgram.html">SendProgram</a>(<span class="stringliteral">&quot;Send a file&quot;</span>, argv[2], atoi(argv[1])));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    shared_ptr&lt;MenuOption&gt; sp2(<span class="keyword">new</span> <a class="code" href="classEvaluateProgram.html">EvaluateProgram</a>(<span class="stringliteral">&quot;Evaluate a program&quot;</span>));</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    shared_ptr&lt;MenuOption&gt; sp3(<span class="keyword">new</span> <a class="code" href="classRetrieveCorrected.html">RetrieveCorrected</a>(<span class="stringliteral">&quot;Retrieve corrections&quot;</span>, argv[2], atoi(argv[1])));</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    menu.<a class="code" href="classClientMenu.html#ac54f4e29e28710ed0971504584720130">addOption</a>(sp1);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    menu.<a class="code" href="classClientMenu.html#ac54f4e29e28710ed0971504584720130">addOption</a>(sp2);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    menu.<a class="code" href="classClientMenu.html#ac54f4e29e28710ed0971504584720130">addOption</a>(sp3);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">string</span> choix = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">int</span> iChoix;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">do</span>{</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        cout &lt;&lt; menu &lt;&lt; endl;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        cin &gt;&gt; choix;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        iChoix = atoi(choix.c_str());</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        <span class="keywordflow">if</span>(iChoix &gt; 0 &amp;&amp; iChoix &lt;= menu.<a class="code" href="classClientMenu.html#ae09e5f55a57a9b25ba6db7ab40e385fc">getOptionsNumber</a>()){</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;            menu.<a class="code" href="classClientMenu.html#abd42b66283cde91a9f6d1c88eaa43088">executeOption</a>(iChoix-1);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Not valid choice!&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Closing...&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    } <span class="keywordflow">while</span>(iChoix &gt; 0 &amp;&amp; iChoix &lt;= menu.<a class="code" href="classClientMenu.html#ae09e5f55a57a9b25ba6db7ab40e385fc">getOptionsNumber</a>());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;}</div>
+<div class="ttc" id="classEvaluateProgram_html"><div class="ttname"><a href="classEvaluateProgram.html">EvaluateProgram</a></div><div class="ttdoc">EvaluateProgram provides a parser for our little programming language. </div><div class="ttdef"><b>Definition:</b> <a href="evaluate__program_8h_source.html#l00016">evaluate_program.h:16</a></div></div>
+<div class="ttc" id="evaluate__program_8h_html"><div class="ttname"><a href="evaluate__program_8h.html">evaluate_program.h</a></div></div>
+<div class="ttc" id="menu__option_8h_html"><div class="ttname"><a href="menu__option_8h.html">menu_option.h</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classClientMenu_html"><div class="ttname"><a href="classClientMenu.html">ClientMenu</a></div><div class="ttdoc">Implements a client-side menu. It handles the options and call them as needed. </div><div class="ttdef"><b>Definition:</b> <a href="client__menu_8h_source.html#l00016">client_menu.h:16</a></div></div>
+<div class="ttc" id="classRetrieveCorrected_html"><div class="ttname"><a href="classRetrieveCorrected.html">RetrieveCorrected</a></div><div class="ttdoc">RetrieveCorrected creates a client which ask to the server process the list of corrected exercises an...</div><div class="ttdef"><b>Definition:</b> <a href="retrieve__corrected_8h_source.html#l00018">retrieve_corrected.h:18</a></div></div>
+<div class="ttc" id="classClientMenu_html_ae09e5f55a57a9b25ba6db7ab40e385fc"><div class="ttname"><a href="classClientMenu.html#ae09e5f55a57a9b25ba6db7ab40e385fc">ClientMenu::getOptionsNumber</a></div><div class="ttdeci">int getOptionsNumber()</div><div class="ttdef"><b>Definition:</b> <a href="client__menu_8cpp_source.html#l00027">client_menu.cpp:27</a></div></div>
+<div class="ttc" id="classClientMenu_html_abd42b66283cde91a9f6d1c88eaa43088"><div class="ttname"><a href="classClientMenu.html#abd42b66283cde91a9f6d1c88eaa43088">ClientMenu::executeOption</a></div><div class="ttdeci">void executeOption(int i)</div><div class="ttdef"><b>Definition:</b> <a href="client__menu_8cpp_source.html#l00022">client_menu.cpp:22</a></div></div>
+<div class="ttc" id="classSendProgram_html"><div class="ttname"><a href="classSendProgram.html">SendProgram</a></div><div class="ttdoc">SendProgram is used to send an exercise to the server, so that the teacher can correct it...</div><div class="ttdef"><b>Definition:</b> <a href="send__program_8h_source.html#l00014">send_program.h:14</a></div></div>
+<div class="ttc" id="retrieve__corrected_8h_html"><div class="ttname"><a href="retrieve__corrected_8h.html">retrieve_corrected.h</a></div></div>
+<div class="ttc" id="classClientMenu_html_ac54f4e29e28710ed0971504584720130"><div class="ttname"><a href="classClientMenu.html#ac54f4e29e28710ed0971504584720130">ClientMenu::addOption</a></div><div class="ttdeci">void addOption(shared_ptr&lt; MenuOption &gt; option)</div><div class="ttdef"><b>Definition:</b> <a href="client__menu_8cpp_source.html#l00015">client_menu.cpp:15</a></div></div>
+<div class="ttc" id="client_8cpp_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="client_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdef"><b>Definition:</b> <a href="client_8cpp_source.html#l00013">client.cpp:13</a></div></div>
+<div class="ttc" id="send__program_8h_html"><div class="ttname"><a href="send__program_8h.html">send_program.h</a></div></div>
+<div class="ttc" id="client__menu_8h_html"><div class="ttname"><a href="client__menu_8h.html">client_menu.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré le Samedi 30 Janvier 2016 12:18:26 pour Tuteur Algebre - client par &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<map id="Graphe hiérarchique des classes" name="Graphe hiérarchique des classes">
+<area shape="rect" id="node1" href="$classMenuOption.html" title="Defines an option to use with ClientMenu. " alt="" coords="5,56,97,83"/>
+<area shape="rect" id="node2" href="$classEvaluateProgram.html" title="EvaluateProgram provides a parser for our little programming language. " alt="" coords="148,5,271,32"/>
+<area shape="rect" id="node3" href="$classRetrieveCorrected.html" title="RetrieveCorrected creates a client which ask to the server process the list of corrected exercises an..." alt="" coords="145,56,273,83"/>
+<area shape="rect" id="node4" href="$classSendProgram.html" title="SendProgram is used to send an exercise to the server, so that the teacher can correct it..." alt="" coords="159,107,260,133"/>
+</map>

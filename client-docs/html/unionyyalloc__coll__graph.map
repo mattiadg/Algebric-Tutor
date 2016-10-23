@@ -1,0 +1,8 @@
+<map id="yyalloc" name="yyalloc">
+<area shape="rect" id="node2" href="$unionYYSTYPE.html" title="YYSTYPE" alt="" coords="64,300,148,327"/>
+<area shape="rect" id="node3" href="$classExpression.html" title="Expression interface, allows implementing Composite Pattern. " alt="" coords="76,5,163,32"/>
+<area shape="rect" id="node4" href="$classVariable.html" title="Variable represents a variable inside our program. " alt="" coords="50,160,120,187"/>
+<area shape="rect" id="node6" href="$classBinaire.html" title="Binaire provides common implementation details for binary operators. " alt="" coords="132,109,195,136"/>
+<area shape="rect" id="node7" href="$classBloc.html" title="Models a sequence of Expressions as a block, the value returned is the value of the last Expression o..." alt="" coords="225,160,273,187"/>
+<area shape="rect" id="node5" href="$classCondition.html" title="A type for binary operations that are also conditions. " alt="" coords="129,211,206,237"/>
+</map>

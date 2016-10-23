@@ -1,0 +1,5 @@
+<map id="MenuOption" name="MenuOption">
+<area shape="rect" id="node2" href="$classEvaluateProgram.html" title="EvaluateProgram provides a parser for our little programming language. " alt="" coords="5,80,128,107"/>
+<area shape="rect" id="node3" href="$classRetrieveCorrected.html" title="RetrieveCorrected creates a client which ask to the server process the list of corrected exercises an..." alt="" coords="152,80,280,107"/>
+<area shape="rect" id="node4" href="$classSendProgram.html" title="SendProgram is used to send an exercise to the server, so that the teacher can correct it..." alt="" coords="304,80,405,107"/>
+</map>
